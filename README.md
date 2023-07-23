@@ -16,6 +16,8 @@ Python Flask Auth
 
 Bu projede, e-posta doğrulaması ile bir kimlik doğrulama sistemi oluşturulmuştur. Kullanıcılar öncelikle register API’sine gelerek kayıt olurlar ve şifreleri güvenli bir şekilde şifrelenir. Daha sonra, kullanıcının e-posta adresine 1 saat geçerli olan bir doğrulama kodu gönderilir. Kullanıcı bu kodu kullanarak e-posta onaylama işlemini gerçekleştirir ve Firebase’de hesabın durumu “onaylı” olarak güncellenir. Kullanıcı giriş yaptığında ise bir JWT token döndürülür.
 
+not:mail doğrulama kodları test amaçlı jsonda tutulmuştur Ancak bu yaklaşım, çok sayıda kullanıcınız ve doğrulama kodunuz varsa ölçeklenmeyebilir.Projelerde bu iş için sql veya nosql kullanmaktayım.
+
 ## Kurulum
 
 1. Depoyu klonlayın:
