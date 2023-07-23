@@ -1,7 +1,7 @@
 
 # Proje Başlığı
 
-Bu projede, e-posta doğrulaması ile bir kimlik doğrulama sistemi oluşturulmuştur. Kullanıcılar öncelikle register API’sine gelerek kayıt olurlar ve şifreleri güvenli bir şekilde şifrelenir. Daha sonra, kullanıcının e-posta adresine 1 saat geçerli olan bir doğrulama kodu gönderilir. Kullanıcı bu kodu kullanarak e-posta onaylama işlemini gerçekleştirir ve Firebase’de hesabın durumu “onaylı” olarak güncellenir. Kullanıcı giriş yaptığında ise bir JWT token döndürülür.
+Python Flask Auth
 
 ## İçindekiler
 - [Proje Açıklaması](#proje-açıklaması)
@@ -13,7 +13,8 @@ Bu projede, e-posta doğrulaması ile bir kimlik doğrulama sistemi oluşturulmu
 - [Lisans](#lisans)
 
 ## Proje Açıklaması
-Projenin genel bir özeti ve amacı hakkında kısa bir açıklama.
+
+Bu projede, e-posta doğrulaması ile bir kimlik doğrulama sistemi oluşturulmuştur. Kullanıcılar öncelikle register API’sine gelerek kayıt olurlar ve şifreleri güvenli bir şekilde şifrelenir. Daha sonra, kullanıcının e-posta adresine 1 saat geçerli olan bir doğrulama kodu gönderilir. Kullanıcı bu kodu kullanarak e-posta onaylama işlemini gerçekleştirir ve Firebase’de hesabın durumu “onaylı” olarak güncellenir. Kullanıcı giriş yaptığında ise bir JWT token döndürülür.
 
 ## Kurulum
 
