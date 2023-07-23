@@ -107,14 +107,21 @@ def check_mail():
                 doc_ref = firestoreDb.collection(f'Accounts').document(f'{username}')
                 doc_ref.update({'statusid': 1})
                 doc_ref.update({'statusname': "onaylı"})
-
+                
+                # Remove the entry from the list
+                exit_data.remove(i)
+                
+                # Write the updated list back to the file
+                with open("numbers.json", "w", encoding="utf-8") as f:
+                    json.dump(exit_data, f)
+                
                 return({"message":"Doğrulama Başarılı","messageid":0})
 
             else:
                 return jsonify({"message":"Doğrulama Kodu yanlış !","messageid":2})
         else:
             return jsonify({"message":"Tekrar Doğrulama Kodu Gönderiniz !","messageid":1})
-        
+
 @app.route('/register', methods=['POST'])
 @auth.login_required
 def register():
