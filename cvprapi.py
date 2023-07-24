@@ -21,8 +21,8 @@ CORS(app)
 auth = HTTPBasicAuth()
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'cvdestekinf@gmail.com'
-app.config['MAIL_PASSWORD'] = 'jfuoqhrmerydazlp'
+app.config['MAIL_USERNAME'] = 'you username'
+app.config['MAIL_PASSWORD'] = 'you password'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
